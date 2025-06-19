@@ -31,108 +31,41 @@
 ---
 
 ## 📂 Project Structure
+'''
+MediTrack/
+├── bin/
+│ └── com/meditrack/
+│ ├── controllers/
+│ ├── dao/
+│ ├── models/
+│ └── views/
+│ ├── appointments/
+│ ├── auth/
+│ ├── billing/
+│ ├── doctors/
+│ └── patients/
+├── lib/
+│ └── mysql-connector-j-8.4.0.jar
+├── src/
+│ └── com/meditrack/
+│ ├── Main.java
+│ ├── TestDriverLoad.java
+│ ├── controllers/
+│ ├── dao/
+│ ├── models/
+│ ├── resources/
+│ │ └── images/
+│ └── views/
+│ ├── appointments/
+│ ├── auth/
+│ ├── billing/
+│ ├── doctors/
+│ └── patients/
+├── TestDriverLoad.java
+├── TestDriverLoad.class
+└── README.md
 
-C:.
-│   README.md
-│   TestDriverLoad.class
-│   TestDriverLoad.java
-│
-├───bin
-│   └───com
-│       └───meditrack
-│           ├───controllers
-│           ├───dao
-│           ├───models
-│           │       User.class
-│           │
-│           └───views
-│               ├───appointments
-│               ├───auth
-│               ├───billing
-│               ├───doctors
-│               └───patients
-├───lib
-│       mysql-connector-j-8.4.0.jar
-│
-└───src
-    │   sources.txt
-    │
-    └───com
-        └───meditrack
-            │   Main.class
-            │   Main.java
-            │   TestDriverLoad.java
-            │
-            ├───controllers
-            │       AppointmentController.class
-            │       AppointmentController.java
-            │       AuthController.class
-            │       AuthController.java
-            │       BillingController.class
-            │       BillingController.java
-            │       DoctorController.class
-            │       DoctorController.java
-            │       PatientController.class
-            │       PatientController.java
-            │
-            ├───dao
-            │       AppointmentDAO.class
-            │       AppointmentDAO.java
-            │       BillingDAO.class
-            │       BillingDAO.java
-            │       DatabaseConnection.class
-            │       DatabaseConnection.java
-            │       DoctorDAO.class
-            │       DoctorDAO.java
-            │       PatientDAO.class
-            │       PatientDAO.java
-            │       TestDriverLoad.class
-            │       UserDAO.class
-            │       UserDAO.java
-            │
-            ├───models
-            │       Appointment.class
-            │       Appointment.java
-            │       Bill.class
-            │       Bill.java
-            │       Doctor.class
-            │       Doctor.java
-            │       Patient.class
-            │       Patient.java
-            │       User.class
-            │       User.java
-            │
-            ├───resources
-            │   └───images
-            └───views
-                ├───appointments
-                │       ScheduleAppointmentView.class
-                │       ScheduleAppointmentView.java
-                │
-                ├───auth
-                │       DashboardView$1.class
-                │       DashboardView.class
-                │       DashboardView.java
-                │       LoginView.class
-                │       LoginView.java
-                │       RegisterView$1.class
-                │       RegisterView.class
-                │       RegisterView.java
-                │
-                ├───billing
-                │       BillingView.class
-                │       BillingView.java
-                │
-                ├───doctors
-                │       DoctorListView.class
-                │       DoctorListView.java
-                │
-                └───patients
-                        AddPatientView.class
-                        AddPatientView.java
-                        PatientListView.class
-                        PatientListView.java
-
+'''
 ---
 
 ## ⚙️ Setup Instructions
@@ -255,4 +188,15 @@ SELECT * FROM users;
 
 
 ### Screenshots
+![Screenshot 2025-06-19 164320](https://github.com/user-attachments/assets/0ad1d4ff-f979-4275-bd2e-006132c6e914)
+![Screenshot 2025-06-19 164200](https://github.com/user-attachments/assets/586dd03a-1aa7-424f-8569-8aea93fa0024)
+![Screenshot 2025-06-19 164209](https://github.com/user-attachments/assets/cc4377ca-ce43-4dea-aa5a-84520908a218)
+![Screenshot 2025-06-19 164219](https://github.com/user-attachments/assets/e07d8a4a-9709-4f69-b416-510df4361777)
+![Screenshot 2025-06-19 164233](https://github.com/user-attachments/assets/9c1f6fe2-583d-4322-a4fe-843e702b1edf)
+![Screenshot 2025-06-19 164244](https://github.com/user-attachments/assets/a70c7130-c71a-464b-a931-4bca24e3f5a3)
+
+
+
+
+
 
