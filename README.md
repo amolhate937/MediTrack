@@ -152,6 +152,8 @@ java -cp "bin;lib/mysql-connector-j-8.4.0.jar" com.meditrack.Main
 ### MySQL Setup 
 
 -- 🚀 Create and Use the Database
+
+
 CREATE DATABASE IF NOT EXISTS meditrack;
 USE meditrack;
 
@@ -165,6 +167,8 @@ CREATE TABLE users (
 ALTER TABLE users ADD COLUMN email VARCHAR(255);
 
 -- 🧍 Patients Table
+
+
 CREATE TABLE patients (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100),
@@ -178,6 +182,8 @@ ALTER TABLE patients ADD contact VARCHAR(15);
 ALTER TABLE patients ADD address VARCHAR(100);
 
 -- 🩺 Doctors Table
+
+
 DROP TABLE IF EXISTS doctors;
 CREATE TABLE doctors (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -186,6 +192,8 @@ CREATE TABLE doctors (
 );
 
 -- 📅 Appointments Table
+
+
 DROP TABLE IF EXISTS appointments;
 CREATE TABLE appointments (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -199,6 +207,8 @@ CREATE TABLE appointments (
 );
 
 -- 💳 Bills Table
+
+
 DROP TABLE IF EXISTS bills;
 CREATE TABLE bills (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -209,6 +219,8 @@ CREATE TABLE bills (
 );
 
 -- ✅ Seed Default Admin User (Avoid duplicate if re-run)
+
+
 INSERT IGNORE INTO users (username, password, role)
 VALUES ('admin@example.com', 'admin123', 'admin');
 
@@ -219,16 +231,22 @@ INSERT INTO doctors (name, specialization) VALUES
 ('Dr. K. Verma', 'Neurologist');
 
 -- ✅ Sample Patients
+
+
 INSERT INTO patients (name, age, gender) VALUES 
 ('John Doe', 30, 'Male'),
 ('Priya Shah', 25, 'Female'),
 ('Amit Kumar', 40, 'Male');
 
 -- ✅ Sample Appointment
+
+
 INSERT INTO appointments (patient_id, doctor_id, date, reason, status)
 VALUES (1, 1, '2025-06-15 10:30:00', 'Chest pain consultation', 'Scheduled');
 
 -- ✅ Sample Bill
+
+
 INSERT INTO bills (patient_id, amount)
 VALUES (1, 1500.00);
 
